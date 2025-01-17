@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- bootstrap cdn css  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- custom style sheet  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .gradient-custom-2 {
+      /* fallback for old browsers */
+      background: #fccb90;
+
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: url(./images/login_img.avif);
+    }
+
+    @media (min-width: 768px) {
+      .gradient-form {
+        height: 100vh !important;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+      }
+      @media only screen and (min-width: 605px) and (max-width: 990px) {
+        .card-body{
+          margin-left: -130px; 
+          margin-right: -281px;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+  .vh-100{
+  width: 1200px !important;
+}
+.ff{
+  width: 1152px;
+    background-color: white;
+}
+#input-group  {
+      width: 980px;
+     
+    }
+    #cityy{
+      width: 981px !important;
+    }
+}
+      /* @media only screen and (min-width: 400px) {
+ #upload{
+  width: 600px;
+ }
+} */
+    }
+
+    body {
+      /* background-color: #0c0617; */
+      background-color: #E6E7EB;
+      /* background-color: #200e3f; */
+      /* background-color: #ff714d; */
+
+    }
+.ff{
+  padding: 60px;
+}
+    .container-fluid {
+      padding: 100px;
+    }
+
+
+
+@media only screen and (max-width: 600px) {
+  .vh-100{
+  width: 1200px !important;
+}
+.ff{
+  width: 1152px;
+    background-color: white;
+}
+#input-group  {
+      width: 980px;
+     
+    }
+    #cityy{
+      width: 981px !important;
+    }
+}
+
+/* 
+@media only screen and (max-width: 700px) {
+  .vh-100{
+  width: 1200px !important;
+}
+.ff{
+  width: 1152px;
+    background-color: white;
+}
+#input-group  {
+      width: 980px;
+     
+    }
+} */
+
+    /* body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  } */
+    .wizard-form {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      /* padding: 20px; */
+      max-width: 583px;
+      /* margin: 50px; */
+    }
+
+    .step {
+      display: none;
+    }
+
+    .step.active {
+      display: block;
+    }
+
+    .step-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: 432px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+
+    .btn {
+      background-color: #ce1266;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .btn.next {
+      float: right;
+      /* margin-left: 140px; */
+    }
+
+    .tab-links {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .tab-link {
+      flex: 1;
+      text-align: center;
+      padding: 10px 0;
+      /* background-color: red; */
+      color: white;
+      /* border: 1px solid #ccc; */
+      /* border-radius: 5px 5px 0 0; */
+      cursor: pointer;
+    }
+
+    .tab-link.active {
+
+      /* color: white;
+    background-color: #ce1266;
+    border-bottom: none; */
+    }
+
+    .tab-icon {
+      margin-right: 5px;
+    }
+
+    #cityy {
+      padding: 8px;
+      width: 432px;
+      border-radius: 6px;
+    }
+
+    /* #first{
+    border-radius: 100%;
+    border: 1px solid red;
+  } */
+
+    #input-group {
+      background-color: transparent;
+      margin-bottom: 30px;
+      border-bottom: 2px solid gray;
+      border-top: 2px solid transparent;
+      border-right: 2px solid transparent;
+      border-left: 2px solid transparent;
+    }
+
+    .input-group {
+      background-color: transparent;
+      margin-bottom: 30px;
+      border-bottom: 2px solid gray;
+      border-top: 2px solid transparent;
+      border-right: 2px solid transparent;
+      border-left: 2px solid transparent;
+      color: gray;
+    }
+
+
+
+    .tab-link i {
+      border: 1px solid #ce1266;
+      padding: 4px;
+      border-radius: 100%;
+    }
+
+    .tab-link {
+      color: #ce1266;
+    }
+
+    .horizontal_line {
+      width: 90%;
+      height: 5px;
+      border-top: 5px dotted black;
+      line-height: 80%;
+    }
+
+    .line {
+      border-bottom: 1px solid white;
+      margin-top: 5px;
+      width: 10%;
+    }
+    .wizard-form{
+      /* width: 1000px; */
+      box-shadow: 0px 0px 10px 10px lightgray;
+    }
+    .gradient-custom-2 {
+      /* fallback for old browsers */
+      background: #fccb90;
+
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: url(./images/login_img.avif);
+    }
+
+    @media (min-width: 768px) {
+      .gradient-form {
+        height: 100vh !important;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+      }
+      @media only screen and (min-width: 605px) and (max-width: 990px) {
+        .card-body{
+          margin-left: -130px; 
+          margin-right: -281px;
+        }
+      }
+      @media only screen and (min-width: 758px) and (max-width: 962px) {
+      
+        #input-group{
+          /* width: 684px; */
+        }
+        #step1{
+         /* margin-left: 80px; */
+        }
+      
+      
+      }
+      /* @media only screen and (min-width: 400px) {
+ #upload{
+  width: 600px;
+ }
+} */
+    }
+
+    body {
+      /* background-color: #0c0617; */
+      background-color: #E6E7EB;
+      /* background-color: #200e3f; */
+      /* background-color: #ff714d; */
+
+    }
+.ff{
+  padding: 60px;
+}
+    .container-fluid {
+      padding: 100px;
+    }
+
+
+
+@media only screen and (max-width: 600px) {
+  .vh-100{
+  width: 1200px !important;
+}
+.ff{
+  width: 1152px;
+    background-color: white;
+}
+#input-group  {
+      width: 980px;
+     
+    }
+    #cityy{
+      width: 981px !important;
+    }
+}
+
+/* 
+@media only screen and (max-width: 700px) {
+  .vh-100{
+  width: 1200px !important;
+}
+.ff{
+  width: 1152px;
+    background-color: white;
+}
+#input-group  {
+      width: 980px;
+     
+    }
+} */
+
+    /* body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  } */
+    .wizard-form {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      /* padding: 20px; */
+      max-width: -883px;
+      /* margin: 50px; */
+    }
+
+    .step {
+      display: none;
+    }
+
+    .step.active {
+      display: block;
+    }
+
+    .step-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: 432px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+
+    .btn {
+      background-color: #ce1266;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .btn.next {
+      float: right;
+      /* margin-left: 140px; */
+    }
+
+    .tab-links {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .tab-link {
+      flex: 1;
+      text-align: center;
+      padding: 10px 0;
+      /* background-color: red; */
+      color: white;
+      /* border: 1px solid #ccc; */
+      /* border-radius: 5px 5px 0 0; */
+      cursor: pointer;
+    }
+
+    .tab-link.active {
+
+      /* color: white;
+    background-color: #ce1266;
+    border-bottom: none; */
+    }
+
+    .tab-icon {
+      margin-right: 5px;
+    }
+
+    #cityy {
+      padding: 8px;
+      width: 432px;
+      border-radius: 6px;
+    }
+
+    /* #first{
+    border-radius: 100%;
+    border: 1px solid red;
+  } */
+
+    #input-group {
+      background-color: transparent;
+      margin-bottom: 30px;
+      border-bottom: 2px solid gray;
+      border-top: 2px solid transparent;
+      border-right: 2px solid transparent;
+      border-left: 2px solid transparent;
+    }
+
+    .input-group {
+      background-color: transparent;
+      margin-bottom: 30px;
+      border-bottom: 2px solid gray;
+      border-top: 2px solid transparent;
+      border-right: 2px solid transparent;
+      border-left: 2px solid transparent;
+      color: gray;
+    }
+
+
+
+    .tab-link i {
+      border: 1px solid #ce1266;
+      padding: 4px;
+      border-radius: 100%;
+    }
+
+    .tab-link {
+      color: #ce1266;
+    }
+
+    .horizontal_line {
+      width: 90%;
+      height: 5px;
+      border-top: 5px dotted black;
+      line-height: 80%;
+    }
+
+    .line {
+      border-bottom: 1px solid white;
+      margin-top: 5px;
+      width: 10%;
+    }
+    .wizard-form{
+      /* width: 1000px; */
+      box-shadow: 0px 0px 10px 10px lightgray;
+      
+    }
+  </style>
+
+</head>
+<!-- style="display: flex; justify-content: center; -->
+
+<body>
+
+
+
+
+
+  <section class="vh-100">
+    <div class="containerr h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-lg-12 col-xl-11">
+          <div class="cards" style="border-radius: 25px;">
+            <div class="card-body p-md-5">
+              <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-6 col-xl-6 order-2 order-lg-1">
+                  <p class="text-center h1 fw-bold mb-5"><img src="images/logo.png" width="160px" alt=""></p>
+                  <!-- <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4 text-light">Sign up</p> -->
+
+                  <!-- <form class="mx-1 mx-md-4">
+      
+                        <div class="d-flex flex-row align-items-center mb-4">
+                          <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                          <div class="form-outline flex-fill mb-0">
+                            <label class="form-label text-light" for="form3Example1c">Your Name</label>
+                            <input type="text" id="form3Example1c" class="form-control" />
+                          </div>
+                        </div>
+      
+                        <div class="d-flex flex-row align-items-center mb-4">
+                          <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                          <div class="form-outline flex-fill mb-0">
+                            <label class="form-label text-light" for="form3Example3c">Your Email</label>
+                            <input type="email" id="form3Example3c" class="form-control" />
+                          </div>
+                        </div>
+      
+                        <div class="d-flex flex-row align-items-center mb-4">
+                          <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                          <div class="form-outline flex-fill mb-0">
+                            <label class="form-label text-light" for="form3Example4c">Password</label>
+                            <input type="password" id="form3Example4c" class="form-control" />
+                          </div>
+                        </div>
+      
+                        <div class="d-flex flex-row align-items-center mb-4">
+                          <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                          <div class="form-outline flex-fill mb-0">
+                            <label class="form-label text-light" for="form3Example4cd">Repeat your password</label>
+                            <input type="password" id="form3Example4cd" class="form-control" />
+                          </div>
+                        </div>
+      
+                        <div class="form-check d-flex justify-content-center mb-5">
+                          <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
+                          <label class="form-check-label text-light" for="form2Example3">
+                            I agree all statements in
+                                <span style="color: #ce1266;">Terms of service </span>
+                          </label>
+                        </div>
+      
+                        <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                          <button type="button" class="btn btn-lg text-light" style="background-color: #ce1266;">Register</button>
+                        </div>
+      
+                      </form> -->
+
+                  <div class="wizard-form">
+                    <div class="ff">
+                        <div><h3 style="text-align: center; margin-bottom: 40px;">We are The Apon Team</h6></div>
+                      <!-- <div class="tab-links">
+                        <div id="first" class="tab-link active" onclick="openTab(event, 'step1')">
+                          <i class="fas fa-user tab-icon"></i> <br> Primary Information
+                        </div>
+
+                        <div class="tab-link" onclick="openTab(event, 'step2')">
+                          <i class="fas fa-info-circle tab-icon"></i> <br>
+                          Personal Information
+                        </div>
+
+                        <div class="tab-link" onclick="openTab(event, 'step3')">
+                          <i class="fas fa-user tab-icon"></i> <br>
+                          Contact & Documentation
+                        </div>
+
+                        <div class="tab-link" onclick="openTab(event, 'step4')">
+                          <i class="fas fa-check-circle tab-icon"></i> <br>
+                          <div style="padding: 10px;"> Final</div>
+                        </div>
+                      </div> -->
+                      <!-- step1 start -->
+                      <div id="step1" class="step active">
+                        <div class="step-title text-dark">Please login to your account</div>
+
+                        <!-- my start -->
+
+                        <!-- my end -->
+
+                        <div class="form-group text-dark">
+                          <label for="name">User Name:</label>
+
+                          <input class="input--style-1" id="input-group" type="text" name="name">
+                        </div>
+
+
+
+
+
+
+                        <div class="form-group text-dark">
+                          <label for="name">Password:</label>
+                          <input class="input--style-1" id="input-group" type="text" name="Last Name">
+                        </div>
+                       
+                        <div class="text-center ">
+                            <button class="btn btn-block fa-lg  mb-3" type="button" style="background-color: #ce1266; color: white; padding: 20px;">Log
+                              in</button>
+                            <a class="text-muted" href="#!">Forgot password?</a>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-center pb-4">
+                            <p class="mb-0 me-2 text-dark">Don't have an account?</p><a href="./signup.html"></a>
+      
+                            <a href="signup_main_page26.html"><button type="button" class="btn btn-outline-dark">
+                                Create new
+                              </button></a>
+                            <!-- <button type="button" class="btn btn-outline-danger">Create new</button></a> -->
+                          </div>
+                      </div>
+                   
+
+
+                    </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-10 col-lg-6 col-xl-6 align-items-center order-1 order-lg-2"
+                    style="margin-top: 110px;">
+                    <!-- <img src="images/sign_up_img.png" width="1400px"
+                        class="img-fluid" alt="Sample image"> -->
+                    <h1 class="text-dark" style=" text-align: center;">
+                      Sign Up
+                    </h1>
+                    <h1 class="text-dark" style=" text-align: center;">
+                      Good to see you here!
+                    </h1>
+                    <div class="mt-5">
+                      <img src="images/Apon logo icon-01(1).png" width="2900px" class="img-fluid" alt="Sample image">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- <div class="container-fluid">
+    <div class="row">
+    
+      <div class="col-md-6">
+        <img src="images/img1.jpg" class="img-fluid" alt="Responsive Image">
+      </div>
+  
+
+      <div class="col-md-6 custom-form">
+        <form>
+          <h2>Form Title</h2>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div> -->
+
+  <script>
+
+    // active
+    // var selectt=document.querySelector("nextt");
+    // active end
+
+
+
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("step");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tab-link");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    function nextStep() {
+      var currentTab = document.querySelector('.step.active');
+      var nextTab = currentTab.nextElementSibling;
+      if (nextTab) {
+        currentTab.classList.remove('active');
+        nextTab.classList.add('active');
+      }
+    }
+
+    function prevStep() {
+      var currentTab = document.querySelector('.step.active');
+      var prevTab = currentTab.previousElementSibling;
+      if (prevTab) {
+        currentTab.classList.remove('active');
+        prevTab.classList.add('active');
+      }
+    }
+
+    function updateConfirmation() {
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var age = document.getElementById('age').value;
+      var city = document.getElementById('city').value;
+
+      document.getElementById('confirm-name').textContent = name;
+      document.getElementById('confirm-email').textContent = email;
+      document.getElementById('confirm-age').textContent = age;
+      document.getElementById('confirm-city').textContent = city;
+    }
+
+    function submitForm() {
+      // You can submit the form here
+      alert('Form submitted successfully!');
+    }
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+  <!-- bootstrap cdn js  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

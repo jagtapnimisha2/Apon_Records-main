@@ -1,0 +1,45 @@
+.elementor-77 .elementor-element.elementor-element-8d2d635:not(.elementor-motion-effects-element-type-background), .elementor-77 .elementor-element.elementor-element-8d2d635 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:transparent;background-image:linear-gradient(269deg, var( --e-global-color-secondary ) 0%, var( --e-global-color-accent ) 100%);}.elementor-77 .elementor-element.elementor-element-8d2d635{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:90px 35px 90px 35px;}.elementor-77 .elementor-element.elementor-element-8d2d635 > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-77 .elementor-element.elementor-element-0b8ec74 .aux-widget-inner > *{text-align:center;margin-left:auto !important;margin-right:auto !important;}.elementor-77 .elementor-element.elementor-element-0b8ec74 .aux-modern-heading-primary{font-size:66px;font-weight:bold;text-transform:uppercase;color:var( --e-global-color-d036517 );margin:0px 0px 0px 0px;}.elementor-77 .elementor-element.elementor-element-0b8ec74{animation-duration:2000ms;animation-timing-function:cubic-bezier(0.77,0,0.175,1);}.elementor-77 .elementor-element.elementor-element-f5d8359 > .elementor-container{max-width:1400px;}.elementor-77 .elementor-element.elementor-element-f5d8359{margin-top:120px;margin-bottom:160px;}.elementor-77 .elementor-element.elementor-element-0ea24be .entry-media img{border-radius:30px 30px 0px 0px !important;}.elementor-77 .elementor-element.elementor-element-0ea24be .entry-title a{color:var( --e-global-color-d036517 );font-size:26px;font-weight:600;text-transform:capitalize;line-height:1.5em;}.elementor-77 .elementor-element.elementor-element-0ea24be .entry-info a, .elementor-77 .elementor-element.elementor-element-0ea24be .entry-info{color:var( --e-global-color-secondary );}.elementor-77 .elementor-element.elementor-element-0ea24be .entry-info, .elementor-77 .elementor-element.elementor-element-0ea24be .entry-info a{font-family:"Poppins", Sans-serif;font-size:14px;font-weight:300;}.elementor-77 .elementor-element.elementor-element-0ea24be .entry-info{margin-bottom:20px;}.elementor-77 .elementor-element.elementor-element-0ea24be .type-post .entry-main{padding:40px 50px 30px 50px;}.elementor-77 .elementor-element.elementor-element-0ea24be .aux-col:hover .entry-main a, .elementor-77 .elementor-element.elementor-element-0ea24be .aux-col:hover .entry-main *{transition:var( --e-global-color-a89e3af );color:var( --e-global-color-a89e3af );}.elementor-77 .elementor-element.elementor-element-0ea24be{text-align:left;animation-delay:1000ms;animation-timing-function:cubic-bezier(0.25,0.46,0.45,0.94);}.elementor-77 .elementor-element.elementor-element-0ea24be > .elementor-widget-container{padding:0px 35px 0px 35px;}@media(max-width:1024px){.elementor-77 .elementor-element.elementor-element-0b8ec74 .aux-modern-heading-primary{font-size:56px;}.elementor-77 .elementor-element.elementor-element-0ea24be .entry-title a{font-size:24px;}.elementor-77 .elementor-element.elementor-element-0ea24be .type-post .entry-main{padding:40px 40px 30px 40px;}}@media(max-width:767px){.elementor-77 .elementor-element.elementor-element-0b8ec74 .aux-modern-heading-primary{font-size:42px;}.elementor-77 .elementor-element.elementor-element-0ea24be .entry-title a{font-size:22px;}.elementor-77 .elementor-element.elementor-element-0ea24be > .elementor-widget-container{margin:0px 0px 0px 0px;}}/* Start custom CSS for aux_recent_posts, class: .elementor-element-0ea24be */.elementor-77 .elementor-element.elementor-element-0ea24be article{
+    border-radius: 30px;
+}
+.elementor-77 .elementor-element.elementor-element-0ea24be .aux-col{
+    padding: 0 25px;
+}
+.elementor-77 .elementor-element.elementor-element-0ea24be .entry-media{
+    margin-bottom: 0;
+}
+.elementor-77 .elementor-element.elementor-element-0ea24be .entry-main{
+    background-color: #16191E;
+    box-shadow: 0px 5px 15px #0000000D;
+    border-radius: 0 0 30px 30px;
+    transition: all 250ms ease-in;
+}
+.elementor-77 .elementor-element.elementor-element-0ea24be .aux-col:hover .entry-main{
+    background-color: var(--e-global-color-a89e3af);
+}
+.elementor-77 .elementor-element.elementor-element-0ea24be .entry-info{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+}
+.elementor-77 .elementor-element.elementor-element-0ea24be .entry-date a time{
+    color: var(--e-global-color-d036517);
+}
+.elementor-77 .elementor-element.elementor-element-0ea24be .entry-tax{
+    background-color: rgba(152, 248, 207, 0.1);
+    padding: 6px 14px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+.elementor-77 .elementor-element.elementor-element-0ea24be .hentry .entry-info [class^="entry-"] ~ [class^="entry-"]::before{
+    display: none;
+}
+.elementor-77 .elementor-element.elementor-element-0ea24be .aux-col:hover .entry-title a , .elementor-77 .elementor-element.elementor-element-0ea24be .aux-col:hover .entry-date a time{
+    color: var(--e-global-color-d036517);
+}
+.elementor-77 .elementor-element.elementor-element-0ea24be .aux-col:hover .entry-tax{
+    background-color: rgba(152, 248, 207, 0.1);
+}
+.elementor-77 .elementor-element.elementor-element-0ea24be .aux-col:hover  .entry-info a{
+    color: var( --e-global-color-secondary );
+}/* End custom CSS */
