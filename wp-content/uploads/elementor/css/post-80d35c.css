@@ -1,0 +1,52 @@
+.elementor-kit-80 {
+  --e-global-color-primary: #0c1014;
+  --e-global-color-secondary: #2cffa5;
+  --e-global-color-text: #ff2759;
+  --e-global-color-accent: #8811ff;
+  --e-global-color-5c2046d: #ffbd10;
+  --e-global-color-d036517: #ffffff;
+  --e-global-color-8a210d3: #e1e1e1;
+  --e-global-color-a89e3af: #4a4bff;
+  --e-global-color-f48658d: #1d2025;
+  --e-global-color-98f67bc: #111823;
+  --e-global-typography-primary-font-family: "Raleway";
+  --e-global-typography-secondary-font-family: "Raleway";
+  --e-global-typography-text-font-family: "Raleway";
+  --e-global-typography-accent-font-family: "Poppins";
+}
+.elementor-section.elementor-section-boxed > .elementor-container {
+  max-width: 1140px;
+}
+.e-con {
+  --container-max-width: 1140px;
+}
+.elementor-widget:not(:last-child) {
+  margin-block-end: 20px;
+}
+.elementor-element {
+  --widgets-spacing: 20px 20px;
+}
+ {
+}
+h1.entry-title {
+  display: var(--page-title-display);
+}
+.elementor-kit-80 e-page-transition {
+  background-color: #ffbc7d;
+}
+@media (max-width: 1024px) {
+  .elementor-section.elementor-section-boxed > .elementor-container {
+    max-width: 1024px;
+  }
+  .e-con {
+    --container-max-width: 1024px;
+  }
+}
+@media (max-width: 767px) {
+  .elementor-section.elementor-section-boxed > .elementor-container {
+    max-width: 767px;
+  }
+  .e-con {
+    --container-max-width: 767px;
+  }
+}

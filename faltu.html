@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>File Upload Example</title>
+</head>
+<body>
+  <h2>Upload Two Files</h2>
+  <input type="file" id="fileInput1" multiple>
+  <br>
+  <input type="file" id="fileInput2" multiple>
+  <br>
+  <button onclick="uploadFiles()">Upload</button>
+
+  <script>
+    function uploadFiles() {
+      var fileInput1 = document.getElementById('fileInput1');
+      var fileInput2 = document.getElementById('fileInput2');
+      
+      var files1 = fileInput1.files;
+      var files2 = fileInput2.files;
+
+      // Now you can access the selected files and perform upload operations
+      // For demonstration, let's just log the filenames
+      console.log("Files from input 1:");
+      for (var i = 0; i < files1.length; i++) {
+        console.log(files1[i].name);
+        // Here you can upload files1[i] to your server
+      }
+
+      console.log("Files from input 2:");
+      for (var j = 0; j < files2.length; j++) {
+        console.log(files2[j].name);
+        // Here you can upload files2[j] to your server
+      }
+    }
+  </script>
+</body>
+</html>
